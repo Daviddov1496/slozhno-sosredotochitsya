@@ -13,8 +13,8 @@
   background-image: url(/images/cover-image-light.png);
   background-position: center 100%;
   background-repeat: no-repeat;
-  background-attachment: fixed; 
-  background-size: cover;     
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 :root.theme-light {
@@ -33,7 +33,6 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-      /* Дублируем переменные светлой темы */
       --accent-color: #353430;
       --block-text-color: #353430;
       --bg-text-color: #FF8DCB;
@@ -41,10 +40,9 @@
       --sub-topic-title: #FF8DCB;
       --link-color:#FF8DCB;
       --focus-color: #FFC2E6;
-  }
+  }/* Дублируем переменные светлой темы */
 
   :root.theme-light {
-    /* Переменные светлой темы */    
     --accent-color: #353430;
     --block-text-color: #353430;
     --bg-text-color: #FF8DCB;
@@ -52,7 +50,7 @@
     --sub-topic-title: #FF8DCB;
     --link-color:#FF8DCB;
     --focus-color: #FFC2E6;
-  }
+  }/* Переменные светлой темы */ 
 
   .lamp {
     display: none;

@@ -61,7 +61,7 @@
    display: grid;
    grid-template-rows: repeat(3, 1fr);
    max-height: 768px;
-   min-width: 100%;
+   width: 100%;
    padding: 20px;
  }
  
@@ -128,7 +128,7 @@
  
  .section__start {
    display: grid;
-   grid-template-columns: 1fr 65%;
+   grid-template-columns: 1fr 66%;
    gap: 20px;
    padding-block-start: 40px;
  }
@@ -154,7 +154,7 @@
  
  .section__last {
    display: grid;
-   grid-template-columns: 1fr 65%;
+   grid-template-columns: 1fr 66%;
    gap: 20px;
    padding-block-start: 20px;
  }
@@ -263,6 +263,7 @@
 
     .header {
       min-height: 1024px;
+      width: 100%;
     }
 
    .header__theme-menu {
@@ -305,6 +306,7 @@
     .section__start {
       margin-block-start: 0;
       padding-block-start: 20px;
+      grid-template-columns: 1fr 65%;
     }
 
    .center__title {
@@ -318,6 +320,10 @@
      display: grid;
      grid-template-columns: 1fr;
      gap: 20px;
+   }
+
+   .section__last{
+    grid-template-columns: 1fr 65%;
    }
 
    .footer {
@@ -338,6 +344,7 @@
      display: grid;
      grid-template-rows: 1fr auto 1fr;
      min-height: 668px;
+     width: 100%;
    }
  
    .header__logo {

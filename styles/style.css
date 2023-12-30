@@ -9,6 +9,11 @@
   --sub-topic-title: #ff0070; /* подзаголовки */
   --link-color:#ff0070; /* ссылки */
   --focus-color: #DB00FF;  /* фокус */
+  background-color: var(--black, #000028);
+  background-image: url(/images/cover-image-dark.png);
+  background-position: center 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .page {

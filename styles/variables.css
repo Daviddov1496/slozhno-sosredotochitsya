@@ -110,7 +110,7 @@
    align-self: center;
    justify-content: flex-end;
    grid-row-start: 3;
-   padding-top: 80px;
+   padding-block-start: 80px;
  }
 
  .head__title {
@@ -123,12 +123,12 @@
    display: flex;
    padding: 0px 20px;
    flex-direction: column;
-   margin-top: 60px;
+   margin-block-start: 60px;
  }
  
  .section__start {
    display: grid;
-   grid-template-columns: 1fr 66%;
+   grid-template-columns: 1fr 65%;
    gap: 20px;
    padding-block-start: 40px;
  }
@@ -154,7 +154,7 @@
  
  .section__last {
    display: grid;
-   grid-template-columns: 1fr 66%;
+   grid-template-columns: 1fr 65%;
    gap: 20px;
    padding-block-start: 20px;
  }
@@ -187,7 +187,7 @@
  /* секция картинок */
  /* Убрать, поменять, сделать красиво */
  .image__title {
-   margin: 80px 20px 20px 20px; 
+   margin: 80px 20px 20px 20px;
  }
  
  .section__image {
@@ -283,6 +283,7 @@
 
    .header__logo {
     font-size: clamp(7.5rem, 7.9001rem + -1.8031vw, 7.25rem);
+    padding-block-start: 0px;
    }
 
    .header__title {
@@ -291,7 +292,8 @@
      justify-content: flex-end;
      align-items: flex-end;
      align-self: center;
-     padding-block-end: 134px;
+     padding-block-start: 0px;
+     padding-block-end: 120px;
    }
  
    .head__title {
@@ -301,13 +303,14 @@
    /*header end */
  
     .section__start {
-      margin-block-start: 20px;
+      margin-block-start: 0;
+      padding-block-start: 20px;
     }
 
    .center__title {
      display: flex;
      align-self: flex-start;
-     margin-block-start: 80px;
+     margin-block-start: 0;
      max-width: 236px;
    }
  
@@ -345,13 +348,14 @@
    .header__theme-menu {
      align-self: flex-start;
      padding-block-start: 65px;
+     padding-inline-end: 5px;
    }
 
    .header__title {
      display: flex;
      grid-row-start: 3;
      justify-content: center;
-     padding-block-end: 20px;
+     padding-block-end: 0;
    }
 
  /* header end */
@@ -365,7 +369,8 @@
   .section__title {
     grid-row-start: 1;
     max-width: 315px;
-    margin-block-end: 0px;
+    margin-block-end: 0;
+    padding-block-end: 0;
   }
   
    .section__start {
@@ -375,23 +380,27 @@
      margin-block-start: 0;/* Важно было сбросить */
    }
    
+   .section__center {
+    margin-block-start: 50px;
+   }
+
    .center__title {
      display: flex;
      align-self: flex-start;
-     margin-block-start: 50px;
-     margin-block-end: 10px;
+     padding: 0;
    }
    
    .text-blocks {
      display: grid;
      gap: 10px;
      grid-template-rows: 1fr;
+     padding-block-start: 0;
    }
    
    .text-blocks__center {
      display: grid;
      grid-template-columns: 1fr;
-     
+     margin-block-start: 10px;
      gap: 10px;
    }
    
@@ -404,13 +413,13 @@
      grid-template-columns: 1fr;
      gap: 10px;
      margin-block-start: 50px;
-     margin-block-end: 10px;
+     margin-block-end: 0;
    }
    
    .topic__title {
      grid-column-start: 1;
      margin-block-start: 10px;
-     margin-block-end: 10px;
+     margin-block-end: 0;
    }
    
    .sub-topic__title {
@@ -421,6 +430,7 @@
      grid-column-start: 1;
      padding-block-start: 0;
      margin-block-start: 10px;
+     padding: 0;
    }
  
    .decorated-zone::before {
@@ -434,7 +444,7 @@
    }
  
    .lamp {
-     right: 20px;
+     right: 25px;
    }
  
    .image__title {

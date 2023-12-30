@@ -9,6 +9,7 @@
   --sub-topic-title: #ff0070; /* подзаголовки */
   --link-color:#ff0070; /* ссылки */
   --focus-color: #DB00FF;  /* фокус */
+  background-color: var(--black, #000028);
 }
 
 .page {
@@ -21,7 +22,6 @@
   background-position: center 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-color: var(--black, #000028);
 }
 
  .decorated-zone::before {

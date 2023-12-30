@@ -21,6 +21,7 @@
   background-position: center 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-color: var(--black, #000028);
 }
 
  .decorated-zone::before {

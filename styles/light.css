@@ -9,14 +9,18 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
-  background-color: #FFF1F7;
-  background-image: url(/images/cover-image-light.png);
-  background-position: center 100%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+  --accent-color: #353430;
+  --block-text-color: #353430;
+  --bg-text-color: #FF8DCB;
+  --title-color: #353430;
+  --sub-topic-title: #FF8DCB;
+  --link-color:#FF8DCB;
+  --focus-color: #FFC2E6;
+  --page-color: #FFF1F7;
+  --bg-img: url(/images/cover-image-light.png);
 }
-/* Переменные светлой темы */  
+
+/* Переменные светлой темы */   
 :root.theme-light {
   --accent-color: #353430;
   --block-text-color: #353430;
@@ -25,25 +29,17 @@
   --sub-topic-title: #FF8DCB;
   --link-color:#FF8DCB;
   --focus-color: #FFC2E6;
+  --page-color: #FFF1F7;
+  --bg-img: url(/images/cover-image-light.png);
 }
-
 /* Остальные стили */
 
+.page.theme_light .lamp {
+  display: none;
+}
 
 @media (prefers-color-scheme: light) {
   :root {
-      --accent-color: #353430;
-      --block-text-color: #353430;
-      --bg-text-color: #FF8DCB;
-      --title-color: #353430;
-      --sub-topic-title: #FF8DCB;
-      --link-color:#FF8DCB;
-      --focus-color: #FFC2E6;
-      background-color: #FFF1F7;
-      background-image: url(/images/cover-image-light.png);
-  }/* Дублируем переменные светлой темы */
-
-  :root.theme-light {
     --accent-color: #353430;
     --block-text-color: #353430;
     --bg-text-color: #FF8DCB;
@@ -51,13 +47,12 @@
     --sub-topic-title: #FF8DCB;
     --link-color:#FF8DCB;
     --focus-color: #FFC2E6;
-    background-color: #FFF1F7;
-    background-image: url(/images/cover-image-light.png);
-  }/* Переменные светлой темы */ 
-
+    --page-color: #FFF1F7;
+    --bg-img: url(/images/cover-image-light.png);
+  }
+  
   .lamp {
     display: none;
   }
 }
-/* Остальные стили */
 

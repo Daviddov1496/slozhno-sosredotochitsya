@@ -4,6 +4,19 @@
 
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+:root {
+  --accent-color: #ff0070;  /* основной текст */
+  --block-text-color: #F1B2CE;  /* текст в блоках */
+  --bg-text-color: #ff0070; /* бекграунд для заголовков */
+  --title-color: #000028; /* заголовки и подзаголовки */
+  --sub-topic-title: #ff0070; /* подзаголовки */
+  --link-color:#ff0070; /* ссылки */
+  --focus-color: #DB00FF;  /* фокус */
+  --page-color: #000028;
+  --main-font: "IBM Plex Mono", monospace;
+  --bg-img: url(/images/cover-image-dark.png);
+}
+
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   display: flex;
@@ -11,10 +24,14 @@
   justify-content: center;
   align-items: flex-start;
   gap: 40px;
-  font-family: IBM Plex Mono, sans-serif;
+  font-family: var(--main-font);
   font-size: 18px;
   font-style: normal;
+  font-weight: 400;
+  line-height: 23.4px;
   background-attachment: fixed;
+  background-color: var(--page-color);
+  background-image: var(--bg-img);
 }
 
 .decorated-zone {
@@ -82,7 +99,6 @@
  
  .header__theme-menu-button {
    text-align: center;
-   font-weight: 400;
    line-height: 18px;
    background-color: transparent;
    border: transparent;
@@ -165,7 +181,6 @@
  .section__title {
    grid-row-start: 1;
    font-weight: 700;
-   line-height: 23.4px;
    padding-block-end: 20px;
  }
  
@@ -175,15 +190,11 @@
  
  .sub-topic__title {
    grid-column-start: 2;
-   font-weight: 400;
-   line-height: 23.4px;
    margin-block-start: 20px;
  }
  
  .section__text {
    grid-column-start: 2;
-   font-weight: 400;
-   line-height: 23.4px;
    padding-block-start: 10px;
  }
  
@@ -256,13 +267,6 @@
    margin-block-end: 0;
  }
  
- .footer__logo {
-   font-size: clamp(7.5rem, 0.1771rem + 20.3118vw, 9.8125rem);
-   font-style: normal;
-   font-weight: 700;
-   line-height: 82.5%;
- }
- 
  @media (width < 769px) {
 
     .header {
@@ -333,10 +337,6 @@
    .footer {
     min-height: 1024px;
    }
-/* font-size: clamp(7.5rem, 7.193rem + 4.0929vw, 9.8125rem); почему-то не работает */
-   .footer__logo {
-    font-size: 120px;
-   }
  }
  
  @media (width < 376px) {
@@ -367,8 +367,6 @@
      justify-content: center;
      padding-block-end: 0;
    }
-
- /* header end */
 
    .section {
      display: flex;
@@ -510,10 +508,5 @@
    .footer {
     margin-block-start: 40px;
     min-height: 667px;
-   }
-
-   .footer__logo {
-    font-size: 116px;
-    /* font-size: clamp(7.5rem, 7.9001rem + -1.8031vw, 7.25rem); */
    }
  }

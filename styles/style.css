@@ -1,17 +1,5 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
-:root {
-  /* Дублируем переменные для тёмной темы */
-  --accent-color: #ff0070;  /* основной текст */
-  --block-text-color: #F1B2CE;  /* текст в блоках */
-  --bg-text-color: #ff0070; /* бекграунд для заголовков */
-  --title-color: #000028; /* заголовки и подзаголовки */
-  --sub-topic-title: #ff0070; /* подзаголовки */
-  --link-color:#ff0070; /* ссылки */
-  --focus-color: #DB00FF;  /* фокус */
-  background-color: var(--black, #000028);
-}
-
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   display: flex;
@@ -22,6 +10,7 @@
   background-position: center 100%;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-size: cover;
 }
 
  .decorated-zone::before {
@@ -33,11 +22,11 @@
    border-bottom: 1px solid var(--accent-color);
    border-left: 1px solid var(--accent-color);
  }
- 
+
  .lamp {
-   color: var(--accent-color);
- }
- 
+  color: var(--accent-color);
+}
+
  .lamp::after {
    border: 1px solid var(--accent-color);
    border-top: 1px solid var(--accent-color);
@@ -108,9 +97,4 @@
  .section__link:focus-visible {
    outline: 1px solid  var(--link-color);
    text-decoration: none;
- }
-  
- .footer__logo {
-   color:var(--focus-color);
-   text-shadow: 2px 2px 0px var(--accent-color);
  }

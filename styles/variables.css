@@ -352,13 +352,13 @@
  
    .header__logo {
      font-size: clamp(7.5rem, 7.9001rem + -1.8031vw, 7.25rem);
-     margin-left: 0;
+     padding-left: 15px;
    }
  
    .header__theme-menu {
      align-self: flex-start;
      padding-block-start: 65px;
-     padding-inline-end: 5px;
+     padding-inline-end: 0;
    }
 
    .header__title {
@@ -452,7 +452,7 @@
    }
  
    .lamp {
-     right: 25px;
+     right: 20px;
    }
  
    .image__title {

@@ -9,7 +9,15 @@
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --accent-color: #ff0070;  /* основной текст */
+  --block-text-color: #F1B2CE;  /* текст в блоках */
+  --bg-text-color: #ff0070; /* бекграунд для заголовков */
+  --title-color: #000028; /* заголовки и подзаголовки */
+  --sub-topic-title: #ff0070; /* подзаголовки */
+  --link-color:#ff0070; /* ссылки */
+  --focus-color: #DB00FF;  /* фокус */
   --page-color: #000028;
+  --main-font: "IBM Plex Mono", monospace;
   --bg-img: url(/images/cover-image-dark.png);
 }
 
@@ -23,6 +31,10 @@
 .decorated-zone::after {
   border-bottom: 1px solid var(--accent-color);
   border-left: 1px solid var(--accent-color);
+}
+
+.page.theme_dark .lamp {
+  display: flex;
 }
 
 .lamp::after {
@@ -51,13 +63,14 @@
 }
 
 .header__theme-menu-button:focus-visible {
+ outline: 0;
  outline-color: transparent;
  border-bottom: 1px solid var(--accent-color);
 }
 
 .header__logo {
   color: var(--focus-color);
-  text-shadow: 4px 4px 0px var(--accent-color);
+  text-shadow: 4px 4px 0px  #FF0070;
 }
 
 .title-decor {
@@ -83,16 +96,16 @@
 }
 
 .section__link {
-  text-shadow: 4px 4px 0px var(--link-color);
+  text-shadow: 2px 2px 0px var(--link-color);
   text-decoration: none;
   outline: 0;
 }
 
 .section__link:hover {
-  outline: transparent;
+  border-bottom: 1px solid  var(--block-text-color);
 }
 
 .section__link:focus-visible {
-  outline: 1px solid  var(--link-color);
+  outline: 1px solid  var(--block-text-color);
   text-decoration: none;
 }

@@ -2,14 +2,11 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 40px;
-  background-repeat: no-repeat;
+  background-color: var(--page-color);
+  background-image: var(--bg-img);
   background-attachment: fixed;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
  .decorated-zone::before {
@@ -37,7 +34,9 @@
  
  .header__theme-menu-button {
     color: var(--accent-color);
+    cursor: pointer;
  }
+
  .header__theme-menu-button_active {
     outline:  1px solid var(--accent-color);
     pointer-events: none;

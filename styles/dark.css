@@ -19,6 +19,7 @@
   --page-color: #000028;
   --main-font: "IBM Plex Mono", monospace;
   --bg-img: url(/images/cover-image-dark.png);
+  --menu-button-hover: rgba(255, 0, 112, 0.40);
 }
 
 /* Остальные стили */

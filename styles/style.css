@@ -2,11 +2,22 @@
 
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  font-family: var(--main-font);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 23.4px;
   background-color: var(--page-color);
   background-image: var(--bg-img);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
  .decorated-zone::before {
@@ -43,7 +54,7 @@
  }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid rgba(255, 0, 112, 0.40);
+  outline: 1px solid var(--menu-button-hover);
 }
 
 .header__theme-menu-button:focus {

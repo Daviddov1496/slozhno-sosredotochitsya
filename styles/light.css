@@ -18,6 +18,7 @@
   --focus-color: #FFC2E6;
   --page-color: #FFF1F7;
   --bg-img: url(/images/cover-image-light.png);
+  --menu-button-hover: rgba(50, 49, 45, 0.40);
 }
 
 /* Переменные светлой темы */   
@@ -28,13 +29,12 @@
   display: none;
 }
 
-.page.theme_light .header__theme-menu-button:hover {
-  outline: 1px solid rgba(50, 49, 45, 0.40);
+.header__theme-menu-button:hover {
+  outline: 1px solid var(--menu-button-hover)
  }
 
- .page.theme_light .header__theme-menu-button:focus {
+ .header__theme-menu-button:focus {
   outline-color: transparent;
-  border-bottom: 1px solid var(--accent-color);
  }
 
 @media (prefers-color-scheme: light) {
@@ -48,6 +48,7 @@
     --focus-color: #FFC2E6;
     --page-color: #FFF1F7;
     --bg-img: url(/images/cover-image-light.png);
+    --menu-button-hover: rgba(50, 49, 45, 0.40);
   }
 
   .lamp {
